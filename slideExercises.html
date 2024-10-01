@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Exercises</title>
+    <style>
+        /* Stili per la tabella all'interno della sezione #TableExercise */
+        #TableExercise table {
+            width: 100%;                  /* Imposta la larghezza della tabella al 100% del contenitore */
+            border-collapse: collapse;    /* Elimina gli spazi tra i bordi delle celle */
+            margin-bottom: 20px;          /* Aggiunge uno spazio inferiore alla tabella */
+        }
+    
+        #TableExercise th, 
+        #TableExercise td {
+            border: 1px solid #000;       /* Aggiunge un bordo nero di 1px alle celle */
+            padding: 10px;                /* Aggiunge padding interno alle celle */
+            text-align: center;           /* Centra il testo all'interno delle celle */
+        }
+    
+        #TableExercise th {
+            background-color: #f2f2f2;    /* Colore di sfondo per le celle di intestazione */
+        }
+    
+        #TableExercise caption {
+            caption-side: top;            /* Posiziona la didascalia sopra la tabella */
+            font-weight: bold;            /* Testo in grassetto per la didascalia */
+            font-size: 1.5em;             /* Dimensione del carattere aumentata per la didascalia */
+            margin-bottom: 10px;          /* Spazio inferiore alla didascalia */
+        }
+    
+        /* Stili per le righe alternate (opzionale) */
+        #TableExercise tbody tr:nth-child(even) {
+            background-color: #f9f9f9;    /* Colore di sfondo per le righe pari */
+        }
+    
+        /* Stili per le celle che utilizzano rowspan o colspan */
+        #TableExercise td[rowspan],
+        #TableExercise td[colspan] {
+            vertical-align: middle;       /* Allinea verticalmente al centro le celle che si estendono su più righe o colonne */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Exercise from the slides -->
+    <section id="TableExercise">
+        <table>
+            <caption>Orario delle lezioni</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th id="lun">Lunedì</th>
+                    <th id="mar">Martedì</th>
+                    <th id="mer">Mercoledì</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="9_10">9-10</th>
+                    <td rowspan="2" headers="lun 9_10 10_11">Tecnologie Web</td>
+                    <td headers="mar 9_10">Analisi</td>
+                    <td rowspan="2" headers="mer 9_10 10_11">Sistemi multimediali</td>
+                </tr>
+                <tr>
+                    <th id="10_11">10-11</th>
+                    <td rowspan="2" headers="mar 10_11 11_12 "> Sistemi multimediali</td>
+                </tr>
+                <tr>
+                    <th id="11_12">11-12</th>
+                    <td headers="lun 11_12">Algebra</td>
+                    <td headers="mer 11_12">Fisica</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section><br><br><br></section>
+
+    <!-- How i did the exercise
+     <section id="FormExercise">
+        <h1>Provide the following information for the project</h1>
+        <form action="submit.php" method="get">
+
+            <section id="Registration">
+                <h2>Registration of the group contact</h2>
+                <label for="name">First name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="surname" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </section>
+    
+            <section id="Project">
+                <h2>Information about the project</h2>
+
+                <section>
+                    <h3>Select one type of difficulty</h3>
+                    <input type="radio" id="easy" name="type" value="easy" required>
+                    <label for="easy">Easy</label><br>
+    
+                    <input type="radio" id="medium" name="type" value="medium" required>
+                    <label for="medium">Medium</label><br>
+    
+                    <input type="radio" id="complex" name="type" value="complex" required>
+                    <label for="complex">Complex</label>
+                </section>
+                
+                <section>
+                    <h3>Insert the number of participants in the group</h3>
+                    <label for="number">Number of participants:</label>
+                    <input type="number" id="number" name="number" min="1" max="4" required>
+                </section>
+            </section>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </section> -->
+
+    <!-- Teacher's solution -->
+    <form action="script.php" method="GET"></form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name:
+                <input type="text" name="firstName"
+                autocomplete="on" placeholder="first name.."
+                required/>
+            </label>
+            <label>Last Name:
+                <input type="text" name="lastName"
+                autocomplete="on" placeholder="last name.."
+                required/>
+            </label>
+            <label>Contact Email:
+                <input type="email" name="email"
+                autocomplete="on" placeholder="email.."
+                required/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Project Type</legend>
+            <label>Type:
+                <select name="projectType">
+                    <option value="simple">Simple</option>
+                    <option value="medium">Medium</option>
+                    <option value="complex">Complex</option>
+                </select>
+            </label>
+            <label>Number of Members:
+                <input type="number" name="numMembers" min="1"
+                max="4" required/>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    
+
+</body>
+</html>

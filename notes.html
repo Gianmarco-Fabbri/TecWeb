@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="it">
+<!-- the head is the part of the html document containing 
+    all the meta datas from the title, that is required,
+    to all others -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Obbligatorio</title>
+    <!-- example of link: 
+     Is used to create relationships from
+     the main document with other resources -->
+    <link rel="stylesheet" href="">
+    <!-- example of base: 
+     It shows the document's "path base" 
+     that will be used to resolve the URLs -->
+    <base href="http./">
+    <!-- example of style:  -->
+    <style>
+        body {
+            background-color: rgb(79, 79, 79);
+            color: white;
+        }</style> 
+    <!-- it's better including 
+    all the styles in the css module-->
+
+    <!-- example of meta: 
+     This add other meta datas at the document
+     The type it's specified in the attribute "name" -->
+    <meta name="description" content="This is the description of the document">
+</head>
+<body>
+
+    <!-- example of h1: 
+     It's the first level of the title
+     and there are more ranks from this to h6 
+     to explicit subsections-->
+    <h1>Content of the document</h1>
+    <h3>This is a subsection</h3>
+
+    <!-- example of p: 
+     It's the paragraph tag, used to 
+     write a part of the document and this should 
+     be used whenever not exists a more specific
+     element to describe that text -->
+    <p>The title is required in every html document</p>
+
+    <!-- example of bt: 
+     This is a break line and should be used
+     just for the interruption that are actually
+     part of the content and not to get a graphic effect-->
+    <p>     Good Evening Filippo,<br/>I am Gianmarco   </p>
+
+    <!-- example of a: 
+     It's the anchor tag, used to create a link
+     to another document or to another part of the same document -->
+    <a href="http://www.google.com">Link to Google</a>
+
+    <!-- example of div: 
+     It's the division tag, used to rapresent a group of
+     elements and explicit their attributes class, lang and title.
+     Mainly used to define the class attribute to give
+     at the group of elements the same presentation style with css elements -->
+    <div class="Gori">
+        <p>First division</p>
+    </div>
+
+    <!-- example of span: 
+     The span tag is an inline element that works like <div>
+     so it is used to define the class attribute for a 
+     consecutive content and not for a group of elements-->
+    <p>This is a <span style="color: red;">red</span> word</p>
+
+    <!-- The <main> element represents the dominant content of the <body> 
+     of a document. It typically contains the main information or 
+     functionality that is the primary focus of the document like
+     the structures <section> / <article>.-->
+    <main></main>
+
+    <!-- Elements that gives a role to the text -->
+    <p>    <i>Ciao</i>             </p>
+    <p>    <em>Ciao</em>           </p>
+    <p>    <strong>Ciao</strong>   </p>
+    <p>    <b>Ciao</b>             </p>
+    <p>    <small>Ciao</small>     </p>
+    <p>    <abbr title="Sori dori"></abbr>           </p>
+    <p>    <var>X</var>   </p>
+    <p>    <dfn><!-- define a term -->definition</dfn>             </p>
+    <code>
+        import numpy as GoriBor<br/>
+        print("Hello World")<br/>    
+        GoriBor.array([1,2,3])
+    </code>
+    <p>    This is a <sub>Subscription</sub> and this is a <sup>Superscrition</sup></p>
+
+    <!-- Elements for citations: -->
+    <blockquote><!-- part of the content that is being citated in another source
+    that is explicitable in the opzional attribute "cite" -->bla bla bla</blockquote>
+    <q><!-- It's like blockquote but for shorter texts -->I am in the chill</q>
+    <cite><!-- To mention a creative work like a biography and is required to explicit
+    the work title or the author name or the URL --><br/>I am 73 years old</cite>
+
+    <!-- Elements to modify a document: Insert and Delete -->
+    <p>My favourite drink is <del>Pepsi </del><ins>Coca Cola</ins></p>
+    
+    <section>
+        <!-- To include an image in the document <figure>
+        and to write and define the caption <figcaption> -->
+        <figure>
+            <img src="pic_mountain.png" alt="Mountain"
+                width="304" height="228"> <!-- alt is what is seen when the photo can't uploaded -->
+            <figcaption>Fig.1 - Mountain, Italy</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <!-- HTML 5 defines a standard to include a video -->
+        <video width="400px" controls> 
+            <!-- controls adds the controls like okay pause, volume ecc..
+                if weight is explixited the value of height got calculated 
+                keeping the original scale -->
+            <source src="gori.mp4" type="video/mp4">
+            <!-- This text is being shown just in case the browser doesn't support the element <video> -->
+            Il tuo browser non supporta il tag video
+        </video>
+    </section>
+    
+    <section>
+        <!-- You can create a image that contains a link in it -->
+        <a href="https://www.instagram.com/gianmarcofabbrii/">
+            <img src="ig.png" alt="gori sori">
+        </a>
+    </section>
+    
+    <section>
+        <!-- HMTL 5 introduces a standard to include audio files in the document  -->
+        <audio controls>
+            <source src="loversroad.mp3"
+            type="audio/mpeg"/>
+            Il tuo browser non supporta il tag audio
+        </audio>
+    </section>
+
+    <!-- You can include a generic object -->
+     <section>
+        <object width="200px" height="150px" data="audio1.swt" type="audio.swt"></object>
+     </section>
+
+    <!-- HTML 5 introduces some APIs to draw directly on the page
+     with the element "<canvas>" which uses some that uses some 
+     Javascript functions to define an area in which to draw some 
+     two-dimensional images and modify them when specific events happen -->
+
+    <!-- To manage a table there are some elements:
+    <table> create a table
+    <tr> rapresents a single ROW of the table 
+    <th> rapresents a header cell
+    <td> rapresents a standard data cell with its content -->
+    
+    <!-- This is a table with the header cells on the top -->
+        <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Gianmarco</td>
+            <td>Fabbri</td>
+        </tr>
+        <tr>
+            <td>Franca</td>
+            <td>Nori</td>
+        </tr>
+    </table>
+
+    <!-- This is a table with the header cells on the left -->
+    <table>
+        <caption>Nomi e Cognomi</caption> <!-- A title of the table -->
+        <tr>
+            <th>First Name</th>
+            <td>Gianmarco</td>
+            <td>Franca</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>Fabbri</td>
+            <td>Nori</td>
+        </tr>
+    </table>
+
+    <!-- You can write in more than one row/col with the attributes colspan / rowspan -->
+
+    <section>
+        <!-- Lists: ordered, unordered, definition.
+        In ordered lists, you can specify the "type" attribute 
+        to specify the type of numbering (1, A, a, I, i),
+        the "start" attribute to specify the initial value of the numbering,
+        and "reversed" to perform the numbering in descending order.
+        In unordered lists, you can specify the "type" attribute
+        to specify the type of bullet (disc, circle, square).
+        Elements: <ol> <ul> <dl> <li> <dt> <dl> -->
+        <ul>
+            <li>Primo</li>
+            <li>Secondo</li>
+            <li>Terzo</li>
+        </ul>
+         <ol>
+            <li>SorNor</li>
+            <ol>
+                <li>Franca</li>
+                <li>Due</li>
+            </ol>
+            <li>Quaranta</li>
+            <ul>
+                <li>uno</li>
+                <ul>
+                    <li>bla</li>
+                </ul>
+            </ul>
+         </ol>
+        <dl>
+            <dt>Primo</dt>
+            <dd>Primo elemento</dd>
+            <dt>Secondo</dt>
+            <dd>Secondo elemento</dd>
+        </dl>
+    </section>
+
+    <!-- A form is a part of the page that contains controls like
+     text fields, buttons, checkboxes, radio buttons, and dropdown lists.
+     The attributes are:
+     - action: specifies the URL of the server-side application that will process the form data.
+     - method: specifies the HTTP method to use when sending form-data (e.g., "get" or "post").
+     - target: specifies where to display the response after submitting the form.
+     - name: specifies the name of the form.
+     - id: uniquely identifies the form.
+     - required: indicates that an input field must be filled out before submitting the form.
+     - autofocus: automatically focuses on a specific input field when the page loads.
+     - autocomplete: enables or disables autocomplete for the form.
+     - class: specifies one or more class names for the form.
+     - style: specifies inline CSS styles for the form.
+     - enctype: specifies how the form-data should be encoded when submitting to the server.-->
+
+    <form action="submit.php" method="post">
+        <!-- Text input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password input field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <!-- Checkbox input -->
+        <p>Please select your favorite fruits:</p>
+        <input type="checkbox" id="apple" name="fruits" value="Apple">
+        <label for="apple">Apple</label><br>
+        <input type="checkbox" id="banana" name="fruits" value="Banana">
+        <label for="banana">Banana</label><br>
+        <input type="checkbox" id="cherry" name="fruits" value="Cherry">
+        <label for="cherry">Cherry</label>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <!-- Dropdown list -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="italy">Italy</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+        </select>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+        
+    <form action="submit.php" method="post"></form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Text input field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email input field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <section>
+        <!-- Input text
+        The input field with type="text" allows the user to enter text on a single line.
+        Commonly used for fields such as username, first name, last name, etc. -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Inserisci il tuo username">
+    
+        <!-- Password input field
+        The input field with type="password" allows the user to enter a password.
+        The characters entered are masked. -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <!-- Email input field
+        The input field with type="email" allows the user to enter an email address.
+        It includes email format validation in the browser. -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        
+        <!-- Numeric input field
+        The input field with type="number" allows the user to enter a numeric value.
+        The min and max attributes define the accepted range. -->
+        <label for="quantity">Quantità:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </section>
+    
+    <section>
+        <!-- Input checkbox
+        Checkbox inputs allow the user to select one or more options from a list.
+        Each checkbox is independent of the others. -->
+        <p>Seleziona i tuoi hobby:</p>
+        <input type="checkbox" id="lettura" name="hobby" value="Lettura">
+        <label for="lettura">Lettura</label><br>
+        <input type="checkbox" id="sport" name="hobby" value="Sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" id="musica" name="hobby" value="Musica">
+        <label for="musica">Musica</label>
+    
+        <!-- Radio button field
+        Radio input fields allow the user to select only one option from the available choices.
+        All radio buttons in the same group must have the same value in the 'name' attribute. -->
+        <p>Genere:</p>
+        <input type="radio" id="maschio" name="genere" value="Maschio">
+        <label for="maschio">Maschio</label><br>
+        <input type="radio" id="femmina" name="genere" value="Femmina">
+        <label for="femmina">Femmina</label><br>
+        <input type="radio" id="altro" name="genere" value="Altro">
+        <label for="altro">Altro</label>
+    </section>
+    
+    <section>
+        <!-- Reset button field
+        The input type reset allows the user to reset all form fields to their initial values. -->
+        <input type="reset" value="Reset">
+    
+        <!-- Input file
+        The input type file allows the user to select and upload a file from their device. -->
+        <label for="fileUpload">Carica un file:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+    </section>
+    
+    <section>
+        <!-- Input data field
+        The input type "date" provides a built-in date picker, allowing the user to select a specific date. -->
+        <label for="birthday">Data di Nascita:</label>
+        <input type="date" id="birthday" name="birthday">
+    
+        <!-- Color input field
+        The input type "color" allows the user to select a color using a graphical color picker. -->
+        <label for="favcolor">Colore Preferito:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    </section>
+    
+    <section>          
+        <!-- Range input field
+        The input type "range" displays a slider that allows the user to select a numeric value
+        within a specified range. -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+    
+        <!-- Search input field
+        The input type "search" is optimized for entering search terms and can include additional features
+        such as quick text clearing. -->
+        <label for="search">Cerca:</label>
+        <input type="search" id="search" name="search">
+    </section>
+    
+    <section>
+        <!-- Input tel field
+        The input type "tel" allows the user to enter a phone number.
+        It does not perform formal validation but can be combined with the 'pattern' attribute to specify a format. -->
+        <label for="phone">Numero di Telefono:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formato: 123-456-7890">
+    
+        <!-- URL input field
+        The input type "url" allows the user to enter a web address, with URL format validation. -->
+        <label for="website">Sito Web:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.esempio.com">
+    </section>
+    
+    <section>
+        <!-- Hidden input field 
+        The input type hidden is used to send additional data to the server without displaying it to the user. -->
+        <input type="hidden" id="userid" name="userid" value="12345">
+    
+        <!-- Time input field
+        The input type "time" allows the user to select a specific time (hours and minutes). -->
+        <label for="appt">Seleziona un orario:</label>
+        <input type="time" id="appt" name="appt">
+    </section>
+    
+    <section>
+        <!-- Month input field
+        The input type month allows the user to select a month and a year, without a specific day. -->
+        <label for="start">Mese di inizio:</label>
+        <input type="month" id="start" name="start">
+    
+        <!-- Week input field
+        The input type week allows the user to select a specific week of a year. -->
+        <label for="week">Seleziona una settimana:</label>
+        <input type="week" id="week" name="week">
+    </section>
+    
+    <section>
+        <!-- Local date and time input field
+        The input type datetime-local allows the user to select both the date and time,
+        without timezone information. -->
+        <label for="meeting">Data e ora della riunione:</label>
+        <input type="datetime-local" id="meeting" name="meeting">
+    
+        <!-- Image submit button
+        The input type image creates a submit button in the form of an image.
+        When clicked, it submits the form to the server. -->
+        <input type="image" src="submit.png" alt="Invia" width="48" height="48">
+    
+        <!-- Generic button
+        The input type button is a generic button that does not have a predefined behavior.
+        It can be used to trigger custom JavaScript functions. -->
+        <input type="button" value="Cliccami" onclick="alert('Pulsante cliccato!')">
+    </section>
+    
+    <!-- Esempio di utilizzo di <datalist>
+     Il tag <datalist> viene utilizzato per fornire un elenco di opzioni predefinite per un campo di input.
+     Quando l'utente inizia a digitare nel campo di input, le opzioni corrispondenti verranno suggerite.
+     Questo è utile per creare campi di input con funzionalità di autocompletamento. -->
+
+    <section>
+        <label for="browser">Scegli un browser:</label>
+        <!-- Campo di input associato al datalist tramite l'attributo 'list' -->
+        <input type="text" id="browser" name="browser" list="browsers" placeholder="Inizia a digitare...">
+
+        <!-- Elemento <datalist> contenente le opzioni disponibili -->
+        <datalist id="browsers">
+            <option value="Google Chrome">
+            <option value="Mozilla Firefox">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+            <option value="Opera">
+            <option value="Brave">
+            <option value="Vivaldi">
+        </datalist>
+    </section>
+
+    <!-- Example of using <output>
+     The <output> tag is used to display the result of a calculation or operation.
+     It can be associated with an input field to display the result in real-time. -->
+    <form oninput="x.value=parseInt(a.value)">
+        <label for="a">slider: <br/>
+        0<input type="range" id="a" value="50"/>100</label> <br/>
+        il valore dello slider è: <output name="x"
+        for="a"></output>
+        </form>
+
+
+    <!-- to have space under the elements on the page -->
+    <section>
+        <br><br><br><br><br><br><br><br><br>
+    </section>
+
+</body>
+</html>

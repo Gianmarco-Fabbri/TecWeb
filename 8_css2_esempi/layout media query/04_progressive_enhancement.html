@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo della pagina</title>
+        <style>
+            nav, aside, article{
+                padding: 1%;
+                border: 1px solid #000;
+                box-sizing: border-box;
+            }
+            h2{
+                margin: 0 0 15px;
+            }
+            nav{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                background-color: yellow;
+            }
+            nav ul li{
+                display: inline-block;
+            }
+            aside{
+                background-color: green;
+                display: none;
+            }
+            article{
+                background-color: red;
+                width: 100%;
+            }
+            @media screen and (min-width: 768px){
+                article, aside{
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                article{
+                    width: 69%;
+                    margin-right: 2%;
+                }
+                aside{
+                    width: 29%;
+                }
+            }
+
+            @media screen and (min-width: 1024px){
+                nav{
+                    display: inline-block;
+                    width: 15%;
+                    margin-right: 2%;
+                }
+                nav ul li{
+                    display: list-item;
+                }
+                article{
+                    width: 61%;
+                }
+                aside{
+                    width: 20%;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Posizionamento</h1>
+        <nav>
+            <h2>Un bel men&ugrave;</h2>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav><article>
+                <h2>Titolo articolo</h2>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+        </article><aside>
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        </aside>
+    </body>
+</html>
