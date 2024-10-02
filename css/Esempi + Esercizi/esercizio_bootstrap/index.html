@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">VirtualeBS</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Cerca</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-2 border m-1 p-2 text-center">
+        <i class="bi bi-speedometer"></i>
+        <p>Dashboard</p>
+      </div>
+      <div class="col-2 border m-1 p-2 text-center">
+        <i class="bi bi-calendar"></i>
+        <p>Calendario</p>
+      </div>
+      <div class="col-2 border m-1 p-2 text-center">
+        <i class="bi bi-book"></i>
+        <p>Tutti i corsi</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>I miei corsi</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <h3><span><i class="bi bi-book"></i></span> Tecnologie Web</h3>
+            <span class="badge rounded-pill text-bg-primary"><i class="bi bi-box-arrow-in-right"></i> Iscrizione
+              aperta</span>
+          </div>
+          <div class="card-body">
+            <div class="row border-top border-bottom">
+              <div class="col-4">
+                <p><strong>Docente:</strong> <a href="#">Silvia Mirri</a></p>
+              </div>
+              <div class="col-4">
+                <p><strong>Docente:</strong> <a href="#">Giovanni Delnevo</a></p>
+              </div>
+              <div class="col-4">
+                <p><strong>Tutor:</strong> <a href="#">Kelvin Olaiya</a></p>
+              </div>
+            </div>
+            <div class="accordion mt-2" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Descrizione
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p><strong>Codice:</strong> <a href="#">00002</a> - Tecnologie Web</p>
+                    <p><strong>Corso:</strong> Ingegneria e scienze informatiche</p>
+                    <p><strong>Campus:</strong> Cesena</p>
+                    <p><strong>Anno accademico:</strong> 2022/23</p>
+                    <a href="#">Sito Web di Silvia Mirri</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4 justify-content-end">
+              <div class="col-6">
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 25%">25%</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary"><i class="bi bi-person-fill-x"></i> Disiscrivimi</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
