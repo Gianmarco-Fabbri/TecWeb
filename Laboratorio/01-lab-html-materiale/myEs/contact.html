@@ -2,6 +2,9 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <style type="text/css">
+        @import url(contact.css);
+    </style>
     <title>Contacts | Blog TW</title>
 </head>
 <body>
@@ -12,16 +15,16 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="archivio.html">Archivio</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
+            <li><a href="archive.html">Archivio</a></li>
+            <li><a href="contact.html">Contatti</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>Autori del Blog</h2>
-            <table>
+        <section class="authors">
+            <h2 class="st1">Autori del Blog</h2>
+            <table class="authorsTable">
                 <tr>
                     <th id="autore">Autore</th>
                     <th id="email">Email</th>
@@ -42,33 +45,27 @@
     </main>
 
     <aside>
-        <section>
-            <h2>Post popolari</h2>
+        <section class="post">
+            <h2 class="st2">Post popolari</h2>
             <ul>
                 <li>
-                    <img src="../img/html5-js-css3.png" alt="server side image"/>
-                    <a href="#">Intro alle tecnologie web</a>
+                    <figure class="server">
+                        <img src="./img/html5-js-css3.png" alt="server side image">
+                        <a href="#">Intro alle Tecnologie web Client side</a>
+                    </figure>
                 </li>
                 <li>
-                    <img src="../img/php.png" alt="php image">
-                    <a href="#">Intro alle Tecnologie Web</a>
+                    <figure class="php">
+                        <img src="./img/php.png" alt="php image">
+                        <a href="#">Intro alle Tecnologie Web Server Side</a>
+                    </figure>
                 </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Categorie</h2>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Jquery</a></li>
-                <li><a href="#">Apache</a></li>
             </ul>
         </section>
     </aside>
+    
     <footer>
-        <p>Tecnologie Web </p>
+        <p>Tecnologie Web -A.A. 2024/2025</p>
     </footer>
     
 
